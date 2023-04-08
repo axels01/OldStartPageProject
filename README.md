@@ -1,1 +1,1 @@
-A start page project from my time in high school.
+# A start page project from my time in high school.
