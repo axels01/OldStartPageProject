@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Storbeng</title>
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div class="top.bar">
+      <div class="dynmap-btn">
+        <a href="http://www.storbeng.se:8123/">Dynmap</a>
+      </div>
+    </div>
+    <div class="clock-container">
+      <div id="clockbox" class="clock"></div>
+      <script src="script.js"></script>
+    </div>
+
+    <div class="search-container">
+      <form
+        autocomplete="off"
+        method="get"
+        action="http://www.google.com/search"
+      >
+        <input
+          class="search-bar-input"
+          type="text"
+          name="q"
+          placeholder="Google"
+          autofocus
+        />
+      </form>
+    </div>
+
+    <div class="container">
+      <main>
+        <section>
+          <div class="content">
+            <a href="https://www.google.com/">Google</a>
+          </div>
+          <div class="content">
+            <a href="https://mail.google.com/">Gmail</a>
+          </div>
+          <div class="content">
+            <a href="https://www.reddit.com/">Reddit</a>
+          </div>
+          <div class="content">
+            <a href="https://www.twitter.com/">Twitter</a>
+          </div>
+          <div class="content">
+            <a href="https://www.discord.com/">Discord</a>
+          </div>
+        </section>
+        <section>
+          <div class="content">
+            <a href="https://www.youtube.com/">Youtube</a>
+          </div>
+          <div class="content">
+            <a href="https://www.netflix.com/">Netflix</a>
+          </div>
+          <div class="content">
+            <a href="https://app.plex.tv/desktop">Plex</a>
+          </div>
+          <div class="content">
+            <a href="https://forum.snahp.it/">Snahp.it</a>
+          </div>
+          <div class="content">
+            <a href="https://www.hackthebox.eu/">Hack The Box</a>
+          </div>
+        </section>
+        <section>
+          <div class="content">
+            <input
+              class="reddit-bar-input"
+              type="text"
+              id="redditSearch"
+              placeholder="..."
+            />
+            <script>
+              var r = document.getElementById("redditSearch");
+              r.addEventListener("keypress", function(e) {
+                var key = e.which || e.keyCode;
+                if (key === 13) {
+                  window.location.href = "https://www.reddit.com/r/" + r.value;
+                }
+              });
+            </script>
+          </div>
+          <div class="content">
+            <a href="https://www.reddit.com/r/trees">/r/trees</a>
+          </div>
+          <div class="content">
+            <a href="https://www.reddit.com/r/CitiesSkylines"
+              >/r/CitiesSkylines</a
+            >
+          </div>
+          <div class="content">
+            <a href="https://www.reddit.com/r/longboarding">/r/longboarding</a>
+          </div>
+          <div class="content">
+            <a href="https://www.reddit.com/r/sweden">/r/Sweden</a>
+          </div>
+        </section>
+        <section>
+          <div class="content">
+            <a href="https://sms.schoolsoft.se/lbs/sso/">Schoolsoft</a>
+          </div>
+          <div class="content">
+            <a href="https://classroom.google.com/h">Classroom</a>
+          </div>
+          <div class="content">
+            <a href="https://translate.google.com/">Translate</a>
+          </div>
+          <div class="content">
+            <a href="https://elevcentralen.se/sv/Login/Index">Elevcentralen</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
